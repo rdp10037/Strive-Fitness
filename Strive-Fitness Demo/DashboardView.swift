@@ -89,7 +89,7 @@ struct DashboardView: View {
                 .padding()
             }
             .task {
-         //       await hkManager.addSimulatorData()
+                //             await hkManager.fetchStepCount()
                 isShowingPermissionPrimingSheet = !hasSeenPermisionPriming
             }
             .navigationTitle("Dashboard")
@@ -102,7 +102,7 @@ struct DashboardView: View {
             } content: {
                 HealthkitPrimingView(hasSeen: $hasSeenPermisionPriming)
             }
-
+            
         }
         .tint(isSteps ? .pink : .indigo)
     }
