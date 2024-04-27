@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1B3016342BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3016332BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift */; };
-		1B3016362BDCA1CA00A390DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3016352BDCA1CA00A390DA /* ContentView.swift */; };
+		1B3016362BDCA1CA00A390DA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3016352BDCA1CA00A390DA /* DashboardView.swift */; };
 		1B3016382BDCA1CB00A390DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3016372BDCA1CB00A390DA /* Assets.xcassets */; };
 		1B30163B2BDCA1CB00A390DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B30163A2BDCA1CB00A390DA /* Preview Assets.xcassets */; };
+		1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */; };
+		1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B3016302BDCA1CA00A390DA /* Strive-Fitness Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strive-Fitness Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3016332BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strive_Fitness_DemoApp.swift; sourceTree = "<group>"; };
-		1B3016352BDCA1CA00A390DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B3016352BDCA1CA00A390DA /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		1B3016372BDCA1CB00A390DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B30163A2BDCA1CB00A390DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
+		1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				1B3016332BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift */,
-				1B3016352BDCA1CA00A390DA /* ContentView.swift */,
+				1B3016352BDCA1CA00A390DA /* DashboardView.swift */,
+				1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */,
+				1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */,
 				1B3016372BDCA1CB00A390DA /* Assets.xcassets */,
 				1B3016392BDCA1CB00A390DA /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B3016362BDCA1CA00A390DA /* ContentView.swift in Sources */,
+				1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */,
+				1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */,
+				1B3016362BDCA1CA00A390DA /* DashboardView.swift in Sources */,
 				1B3016342BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
