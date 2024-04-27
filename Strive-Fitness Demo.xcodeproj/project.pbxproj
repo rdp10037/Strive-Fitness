@@ -13,6 +13,7 @@
 		1B30163B2BDCA1CB00A390DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B30163A2BDCA1CB00A390DA /* Preview Assets.xcassets */; };
 		1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */; };
 		1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */; };
+		1B74ADC02BDCC4DE0054B788 /* HealthkitPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		1B30163A2BDCA1CB00A390DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
 		1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataSheet.swift; sourceTree = "<group>"; };
+		1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthkitPrimingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1B3016352BDCA1CA00A390DA /* DashboardView.swift */,
 				1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */,
 				1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */,
+				1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */,
 				1B3016372BDCA1CB00A390DA /* Assets.xcassets */,
 				1B3016392BDCA1CB00A390DA /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */,
 				1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */,
 				1B3016362BDCA1CA00A390DA /* DashboardView.swift in Sources */,
+				1B74ADC02BDCC4DE0054B788 /* HealthkitPrimingView.swift in Sources */,
 				1B3016342BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
