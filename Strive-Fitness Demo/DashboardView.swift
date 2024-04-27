@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DashboardView.swift
 //  Strive-Fitness Demo
 //
 //  Created by Rob Pee on 4/26/24.
@@ -21,7 +21,7 @@ enum HealthMetricContent: CaseIterable, Identifiable {
     }
 }
 
-struct ContentView: View {
+struct DashboardView: View {
     
     @State private var selectedStat: HealthMetricContent = .steps
     var isSteps: Bool { selectedStat == .steps }
@@ -87,7 +87,7 @@ struct ContentView: View {
             }
             .navigationTitle("Dashboard")
             .navigationDestination(for: HealthMetricContent.self) { metric in
-                Text(metric.title)
+                HealthDataListView(metric: metric)
             }
             .scrollIndicators(.hidden)
         }
@@ -96,5 +96,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    DashboardView()
 }

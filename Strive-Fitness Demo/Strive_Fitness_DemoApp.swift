@@ -11,7 +11,7 @@ import SwiftUI
 struct Strive_Fitness_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView()
         }
     }
 }
