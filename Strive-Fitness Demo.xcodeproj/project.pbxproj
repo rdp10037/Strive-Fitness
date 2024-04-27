@@ -11,8 +11,10 @@
 		1B3016362BDCA1CA00A390DA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3016352BDCA1CA00A390DA /* DashboardView.swift */; };
 		1B3016382BDCA1CB00A390DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3016372BDCA1CB00A390DA /* Assets.xcassets */; };
 		1B30163B2BDCA1CB00A390DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B30163A2BDCA1CB00A390DA /* Preview Assets.xcassets */; };
+		1B5BBC232BDD72450009F2AB /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BBC222BDD72450009F2AB /* HealthKitManager.swift */; };
 		1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */; };
 		1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */; };
+		1B74ADC02BDCC4DE0054B788 /* HealthkitPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +23,11 @@
 		1B3016352BDCA1CA00A390DA /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		1B3016372BDCA1CB00A390DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B30163A2BDCA1CB00A390DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B5BBC222BDD72450009F2AB /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
 		1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataSheet.swift; sourceTree = "<group>"; };
+		1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthkitPrimingView.swift; sourceTree = "<group>"; };
+		1B74ADC12BDCC8DF0054B788 /* Strive-Fitness Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Strive-Fitness Demo.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +60,15 @@
 		1B3016322BDCA1CA00A390DA /* Strive-Fitness Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1B74ADC12BDCC8DF0054B788 /* Strive-Fitness Demo.entitlements */,
 				1B3016332BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift */,
 				1B3016352BDCA1CA00A390DA /* DashboardView.swift */,
 				1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */,
 				1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */,
+				1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */,
 				1B3016372BDCA1CB00A390DA /* Assets.xcassets */,
 				1B3016392BDCA1CB00A390DA /* Preview Content */,
+				1B5BBC222BDD72450009F2AB /* HealthKitManager.swift */,
 			);
 			path = "Strive-Fitness Demo";
 			sourceTree = "<group>";
@@ -145,7 +153,9 @@
 			files = (
 				1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */,
 				1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */,
+				1B5BBC232BDD72450009F2AB /* HealthKitManager.swift in Sources */,
 				1B3016362BDCA1CA00A390DA /* DashboardView.swift in Sources */,
+				1B74ADC02BDCC4DE0054B788 /* HealthkitPrimingView.swift in Sources */,
 				1B3016342BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,12 +287,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Strive-Fitness Demo/Strive-Fitness Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Strive-Fitness Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = MPXW95U5UY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weight data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add step and weight data to Apple Health. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,12 +319,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Strive-Fitness Demo/Strive-Fitness Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Strive-Fitness Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = MPXW95U5UY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weight data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add step and weight data to Apple Health. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
