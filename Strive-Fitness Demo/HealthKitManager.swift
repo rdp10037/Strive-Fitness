@@ -32,9 +32,13 @@ import Observation
                                                                anchorDate: endDate,
                                                                intervalComponents: .init(day: 1))
         
-        let stepCount = try! await stepsQuery.result(for: store)
-        stepData = stepCount.statistics().map {
-            .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+        do {
+            let stepCount = try await stepsQuery.result(for: store)
+            stepData = stepCount.statistics().map {
+                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+            }
+        } catch {
+            
         }
     }
     
@@ -52,9 +56,13 @@ import Observation
                                                                anchorDate: endDate,
                                                                intervalComponents: .init(day: 1))
         
-        let weightCount = try! await weightQuery.result(for: store)
-        weightData = weightCount.statistics().map {
-            .init(date: $0.startDate, value: $0.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
+        do {
+            let weightCount = try await weightQuery.result(for: store)
+            weightData = weightCount.statistics().map {
+                .init(date: $0.startDate, value: $0.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
+            }
+        } catch {
+            
         }
     }
     
