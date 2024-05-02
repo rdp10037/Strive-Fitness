@@ -13,7 +13,7 @@ struct AddDataSheet: View {
     @State private var addDataDate: Date = .now
     @State private var valueToAdd: String = ""
     var metricTitle: String
-    var metricType: HealthMetricContent
+    var metricType: HealthMetricContext
         
     var body: some View {
         NavigationStack {

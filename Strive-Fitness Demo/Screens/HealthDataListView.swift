@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HealthDataListView: View {
     @State private var isShowingData = false
-    var metric: HealthMetricContent
+    var metric: HealthMetricContext
     
     var body: some View {
         List(0..<28) { i in

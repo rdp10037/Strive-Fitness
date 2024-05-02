@@ -16,6 +16,7 @@
 		1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */; };
 		1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */; };
 		1B74ADC02BDCC4DE0054B788 /* HealthkitPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */; };
+		1BB44E002BE3334100F030D0 /* StepBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB44DFF2BE3334100F030D0 /* StepBarChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataSheet.swift; sourceTree = "<group>"; };
 		1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthkitPrimingView.swift; sourceTree = "<group>"; };
 		1B74ADC12BDCC8DF0054B788 /* Strive-Fitness Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Strive-Fitness Demo.entitlements"; sourceTree = "<group>"; };
+		1BB44DFF2BE3334100F030D0 /* StepBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,12 @@
 			children = (
 				1B74ADC12BDCC8DF0054B788 /* Strive-Fitness Demo.entitlements */,
 				1B3016332BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift */,
-				1B3016352BDCA1CA00A390DA /* DashboardView.swift */,
-				1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */,
-				1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */,
-				1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */,
+				1BB44E042BE335CB00F030D0 /* Models */,
+				1BB44E032BE335A100F030D0 /* Managers */,
+				1BB44E022BE3357F00F030D0 /* Screens */,
+				1BB44E012BE3357000F030D0 /* Charts */,
 				1B3016372BDCA1CB00A390DA /* Assets.xcassets */,
 				1B3016392BDCA1CB00A390DA /* Preview Content */,
-				1B5BBC222BDD72450009F2AB /* HealthKitManager.swift */,
-				1B5BBC242BDD8D7F0009F2AB /* HealthMetric.swift */,
 			);
 			path = "Strive-Fitness Demo";
 			sourceTree = "<group>";
@@ -82,6 +82,41 @@
 				1B30163A2BDCA1CB00A390DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1BB44E012BE3357000F030D0 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				1BB44DFF2BE3334100F030D0 /* StepBarChart.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		1BB44E022BE3357F00F030D0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */,
+				1B3016352BDCA1CA00A390DA /* DashboardView.swift */,
+				1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */,
+				1B74ADBB2BDCB5CA0054B788 /* HealthDataListView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1BB44E032BE335A100F030D0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1B5BBC222BDD72450009F2AB /* HealthKitManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1BB44E042BE335CB00F030D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B5BBC242BDD8D7F0009F2AB /* HealthMetric.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB44E002BE3334100F030D0 /* StepBarChart.swift in Sources */,
 				1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */,
 				1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */,
 				1B5BBC232BDD72450009F2AB /* HealthKitManager.swift in Sources */,
