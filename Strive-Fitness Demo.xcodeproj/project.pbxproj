@@ -17,6 +17,10 @@
 		1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBD2BDCB83E0054B788 /* AddDataSheet.swift */; };
 		1B74ADC02BDCC4DE0054B788 /* HealthkitPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */; };
 		1BB44E002BE3334100F030D0 /* StepBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB44DFF2BE3334100F030D0 /* StepBarChart.swift */; };
+		1BB44E062BE337B900F030D0 /* ChartMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB44E052BE337B900F030D0 /* ChartMath.swift */; };
+		1BB44E082BE337E200F030D0 /* ChartDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB44E072BE337E200F030D0 /* ChartDataTypes.swift */; };
+		1BB44E0B2BE3388400F030D0 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB44E0A2BE3388400F030D0 /* DateExtension.swift */; };
+		1BB44E0E2BE33B0600F030D0 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1BB44E0D2BE33B0600F030D0 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,9 @@
 		1B74ADBF2BDCC4DE0054B788 /* HealthkitPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthkitPrimingView.swift; sourceTree = "<group>"; };
 		1B74ADC12BDCC8DF0054B788 /* Strive-Fitness Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Strive-Fitness Demo.entitlements"; sourceTree = "<group>"; };
 		1BB44DFF2BE3334100F030D0 /* StepBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarChart.swift; sourceTree = "<group>"; };
+		1BB44E052BE337B900F030D0 /* ChartMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartMath.swift; sourceTree = "<group>"; };
+		1BB44E072BE337E200F030D0 /* ChartDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataTypes.swift; sourceTree = "<group>"; };
+		1BB44E0A2BE3388400F030D0 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB44E0E2BE33B0600F030D0 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,7 @@
 			children = (
 				1B74ADC12BDCC8DF0054B788 /* Strive-Fitness Demo.entitlements */,
 				1B3016332BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift */,
+				1BB44E092BE3387000F030D0 /* Extensions */,
 				1BB44E042BE335CB00F030D0 /* Models */,
 				1BB44E032BE335A100F030D0 /* Managers */,
 				1BB44E022BE3357F00F030D0 /* Screens */,
@@ -88,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				1BB44DFF2BE3334100F030D0 /* StepBarChart.swift */,
+				1BB44E052BE337B900F030D0 /* ChartMath.swift */,
+				1BB44E072BE337E200F030D0 /* ChartDataTypes.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -119,6 +130,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1BB44E092BE3387000F030D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BB44E0A2BE3388400F030D0 /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +154,9 @@
 			dependencies = (
 			);
 			name = "Strive-Fitness Demo";
+			packageProductDependencies = (
+				1BB44E0D2BE33B0600F030D0 /* Algorithms */,
+			);
 			productName = "Strive-Fitness Demo";
 			productReference = 1B3016302BDCA1CA00A390DA /* Strive-Fitness Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 1B3016272BDCA1CA00A390DA;
+			packageReferences = (
+				1BB44E0C2BE33B0600F030D0 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 1B3016312BDCA1CA00A390DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,11 +214,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB44E062BE337B900F030D0 /* ChartMath.swift in Sources */,
 				1BB44E002BE3334100F030D0 /* StepBarChart.swift in Sources */,
 				1B74ADBC2BDCB5CA0054B788 /* HealthDataListView.swift in Sources */,
 				1B74ADBE2BDCB83E0054B788 /* AddDataSheet.swift in Sources */,
 				1B5BBC232BDD72450009F2AB /* HealthKitManager.swift in Sources */,
 				1B3016362BDCA1CA00A390DA /* DashboardView.swift in Sources */,
+				1BB44E0B2BE3388400F030D0 /* DateExtension.swift in Sources */,
+				1BB44E082BE337E200F030D0 /* ChartDataTypes.swift in Sources */,
 				1B74ADC02BDCC4DE0054B788 /* HealthkitPrimingView.swift in Sources */,
 				1B3016342BDCA1CA00A390DA /* Strive_Fitness_DemoApp.swift in Sources */,
 				1B5BBC252BDD8D7F0009F2AB /* HealthMetric.swift in Sources */,
@@ -410,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BB44E0C2BE33B0600F030D0 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BB44E0D2BE33B0600F030D0 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BB44E0C2BE33B0600F030D0 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B3016282BDCA1CA00A390DA /* Project object */;
 }
